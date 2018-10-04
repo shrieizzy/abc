@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script src="https//unpkg.com/vue/dist/vue.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    
+        <div id="app">
+                <div class="container">
+                  <form>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                        <h1>File a Complaint</h1>
+                        <hr>
+                        <div class="form-group">
+                          <label for="Fname">Fname</label>
+                          <input
+                              type="text"
+                              id="Fname"
+                              class="form-control"
+                              v-model="userData.Fname">
+                        </div>
+                    
+                          
+                        <div class="form-group">
+                          <label for="Lname">Lname</label>
+                          <input
+                              type="text"
+                              id="Lname"
+                              class="form-control"
+                              v-model="userData.Lname">
+                          
+                        </div>
+                        <div class="form-group">
+                          <label for="age">Age</label>
+                          <input
+                              type="number"
+                              id="age"
+                              class="form-control"
+                              v-model="userData.age">
+                              
+                        </div>
+              
+                      </div>
+                    </div>
+                    <script src="newform.js"></script>
+    
+</body>
+</html>

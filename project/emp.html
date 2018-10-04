@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+<title>Employee details</title>
+<link rel="stylesheet" type="text/css" href="1.css"/>
+</head>
+<body>
+<div id="app">
+    {{ Fname }}
+<form method="GET"action="2.html">
+<th>Employee Id:</th><input type="text" :value="Id" placeholder="Id" required><br><br>
+<i class="fa fa-user icon"></i>
+ 
+<th>Firstname:</th><input type="text" :value="Fname" placeholder="FirstName"required><br><br>
+<th>Lastname:</th><input type="text" :value="Lname" placeholder="Lastname"required><br><br>
+<th><label for="sex">sex</label>
+<input type="radio" name="sex":value="male" checked>male
+<input type="radio" name="sex":value="female">female<br><br>
+
+<th>Emailid:<th><input type="email" v-bind:value="email" placeholder="Email"><br><br>
+<input type="button" onclick=submit(this.form) value="sumbit"></button>
+<input type="reset" value="cancel">
+
+</form>
+
+
+<script src="1.js"></script>
+</div>
+</body>
+</html>
