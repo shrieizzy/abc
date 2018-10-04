@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<style>
+     .fixImageSize{
+     height:400px;
+   width:500px
+}
+</style>
+</head>
+<body>
+    <div id="app">
+    <p>{{ title }}</p>
+    <img v-bind:src="imagelink" v-bind:class="{fixImageSize:isActive}">
+    <input type="image" src="g1.jpg"><!-- alt="Submit" width="400" height="400">-->
+    </div>
+<script src="img.js"></script>
+</body>
+</html>

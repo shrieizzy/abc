@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+    <form>
+        
+            <div id='app'>
+                <h1>multiple checkboxes</h1>
+                    <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+                    <label for="jack">Jack</label>
+                    <input type="checkbox" id="john" value="John" v-model="checkedNames">
+                    <label for="john">John</label>
+                    <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+                    <label for="mike">Mike</label>
+                    <br>
+                    <p>Checked names: {{ checkedNames }}</p>
+                    <br>
+
+                    <h2>multiple radion button</button></h2>
+                    
+                <input type="radio" id="one" value="One" v-model="picked"
+                 id="TWO" value="TWO" v-model="picked">
+                <label for="one">One</label>
+                <br>
+                <!--<input type="radio" id="two" value="Two" v-model="picked">
+                <label for="two">Two</label>
+                <br>-->
+                <span>picked: {{ picked }}</span>
+                 
+                <h2>select</h2>
+                <select v-model="selected">
+                        <option disabled value="">Please select one</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                      </select>
+                      <p>selected: {{ selected }}</p>
+                
+
+                </div>
+         <script src="1.js"></script>
+    </form>
+    
+</body>
+</html>
